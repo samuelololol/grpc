@@ -1,0 +1,23 @@
+syntax="proto3";
+
+// Interface exported by the server
+service exampleService {
+    // An example gRPC service
+    //
+    // Get random information from service provider
+    //
+    // In the detailed implementation, it should return
+    // some meaningful information to the client
+    rpc GetInfo(Request) returns (Response) {}
+}
+
+
+// empty struct of Request message
+message Request {
+    string content = 1;
+}
+
+// empty struct of Response message
+message Response {
+    string content = 1;
+}
