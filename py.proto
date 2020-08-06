@@ -1,4 +1,5 @@
 syntax="proto3";
+option go_package = "samuel.com/pbinfo";
 
 // Interface exported by the server
 service exampleService {
