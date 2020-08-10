@@ -1,3 +1,4 @@
 .idea/*
 py.proto
+py.pb.go
 samuel.com/*

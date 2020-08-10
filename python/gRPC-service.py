@@ -18,7 +18,7 @@ _RTN_MSG = None
 class ExampleServicer(py_pb2_grpc.exampleServiceServicer):
     def GetInfo(self, request, context):
         rtn_msg = " ".join(sys.argv[1:])
-        print(rtn_msg)
+        print("request: {}, response: {}".format(request.content, rtn_msg))
         return py_pb2.Response(content=rtn_msg)
 
 
